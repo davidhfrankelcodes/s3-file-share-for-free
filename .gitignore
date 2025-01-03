@@ -1,7 +1,16 @@
+# Original list
 .env
 .DS_Store
 .pythonlibs
 .upm
 .__pycache__
+
+# Ignore Python cache & venv
 __pycache__/
+*.pyc
+*.pyo
+.venv/
 venv/
+
+# Ignore local environments
+.env
