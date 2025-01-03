@@ -206,6 +206,16 @@ The application uses:
 
 For more detailed deployment instructions, visit [Sevalla Documentation](https://docs.sevalla.com)
 
+### Run with Docker Compose
+
+1. **Build and run** your container with:
+   ```bash
+   docker-compose up -d
+   ```
+   - This will build the Docker image from your `Dockerfile`.
+   - Then it spins up the `cloud-storage-manager` container, mapping port 5001 on your host to port 5000 inside the container.
+
+2. **Access** the application at [http://localhost:5001](http://localhost:5001).
 
 ## Contributing
 

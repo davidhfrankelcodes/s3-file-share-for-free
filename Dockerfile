@@ -22,10 +22,5 @@ COPY . /app
 # Expose the port on which your Flask app runs
 EXPOSE 5000
 
-# (Optional) If your app needs environment variables, specify them here or pass them with `-e` during run
-# ENV AWS_ACCESS_KEY_ID=xxxx
-# ENV AWS_SECRET_ACCESS_KEY=xxxx
-# ENV AWS_REGION=us-east-1
-
 # Start the Flask application
 CMD ["python", "app.py"]

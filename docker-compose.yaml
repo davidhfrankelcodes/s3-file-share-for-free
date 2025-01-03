@@ -8,11 +8,6 @@ services:
       # dockerfile: Dockerfile
     ports:
       - "${HOST_PORT:-5001}:5000"
-    environment:
-      # Replace with your actual values or override via an .env file
-      AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID}
-      AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY}
-      AWS_REGION: ${AWS_REGION:-us-east-1} # default is us-east-1
     # (Optional) Mount the current directory if you want live code edits
     # volumes:
     #   - .:/app
